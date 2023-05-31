@@ -38,9 +38,6 @@
                 str = str.replace('px', '');
                 return parseInt(str);
             }
-            function isOverflown(element) {
-                return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
-            }
             let mover_style = getComputedStyle(mover);
             let style_top = getNum(mover_style.getPropertyValue('top'));
             let style_bottom = getNum(mover_style.getPropertyValue('bottom'));
